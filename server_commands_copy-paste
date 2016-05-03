@@ -1,0 +1,41 @@
+##STARTUP##
+
+  1. CREATE DATABASE database_name; # From the $USER database.
+
+  2. CREATE TABLE table_name (id serial PRIMARY KEY, some_column varchar, another_column int, yet_another_column timestamp);
+
+##EDITING##
+
+  ALTER TABLE table_name ADD column_name boolean;
+
+  ALTER TABLE table_name DROP column_name;
+
+  INSERT INTO contacts (name, age, birthday) VALUES ('Wes', 43, '1969-05-01') RETURNING id;
+
+##COMMON COMMANDS##
+
+  List all databases: \l
+
+  Connect to database: \c database_name
+
+  List tables in current database: \dt
+
+  List columns in a table: \d table_name
+
+  Exit out of help menu: q
+
+##COLUMN VALUE TYPES##
+
+  int
+
+  float
+
+  varchar
+
+  text (for long strings of text)
+
+  timestamp
+
+  boolean
+
+##
