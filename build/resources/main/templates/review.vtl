@@ -1,0 +1,14 @@
+<div class="restaurant">
+  #if ($restaurants)
+    #foreach ($restaurant in $restaurants)
+      <h2>$restaurant.getName()</h2>
+        <li>$restaurant.getRating()</li>
+        <p>$restaurant.getReview()</p>
+    #end
+  #else
+    <p>
+    No new tests
+    </p>
+  #end
+</div>
+<button><a href="/">home</a></button>
