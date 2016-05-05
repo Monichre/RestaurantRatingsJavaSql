@@ -1,0 +1,130 @@
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+@font-face {
+    font-family: messy;
+    src: url(../messy/messyFont.ttf);
+}
+
+@font-face {
+    font-family: lemon;
+    src: url(../lemon/lemon.otf);
+}
+/********************************************************************************************/
+
+
+
+/********************************************************************************************/
+
+
+
+body{
+  margin: auto;
+  background: url(../images/food-best.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1,h2 {
+  text-align: center;
+  color: #C34A2C;
+
+}
+
+h1 {
+  font-size: 45px;
+  font-family: messy;
+}
+
+h2 {
+  font-family: lemon;
+  font-size: 30px;
+}
+.container{
+  margin:auto;
+}
+.form-inline{
+  margin-top: 10%;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  padding: 1%;
+}
+.review-rating{
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.review-rating label{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.review-rating textarea{
+  display: block!important;
+  margin: auto!important;
+}
+
+select#rating option[value="1"]   { background-image:url(../images/star1.png);}
+select#rating option[value="2"]   { background-image:url(../images/star2.png);}
+select#rating option[value="3"]   { background-image:url(../images/star3.png);}
+select#rating option[value="4"]   { background-image:url(../images/star4.png);}
+select#rating option[value="5"]   { background-image:url(../images/star5.png);}
+
+.form-group {
+  display: block;
+  margin: auto;
+  padding: 2%;
+}
+#rating {
+  display: block;
+  margin: auto;
+  width: 200px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.butt-div {
+  margin-top: 5%;
+}
+.btn{
+  margin: auto;
+  display: block;
+  text-align: center;
+  background-color: #F88017;
+}
+.restaurant{
+  margin: auto;
+  background: url(../images/food2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.info {
+  margin: auto;
+  text-align: center;
+
+}
+
+.info p {
+  color: white;
+}

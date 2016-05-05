@@ -5,39 +5,26 @@
         <div class="form-group">
           <label for="restaurantName">Add a Restaurant</label><!-- RESTAURANT NAME -->
           <input type="text" class="form-control" id="restaurantName" name="restaurantName">
-        </div>
-        <div class="form-group">
+
           <label for="cuisine">Add new cuisine type</label>
           <input id="cuisine" name="cuisine" type="text">
         </div>
-        <div class="form-group">
+        <div class="review-rating">
           <label for="review">Write a review!</label><!-- review -->
           <textarea class="form-control" name="review" type="text" id="review" rows="4"></textarea>
+          <div>
+            <select id="rating" name="rating" class="form-control"><!-- RATING -->
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"><img src="/images/star.png"></option>
+            </select>
+          </div>
+        </div
+        <div class="butt-div">
+          <button type="submit" class="btn btn-default">Publish!</button>
         </div>
-        <select id="rating" name="rating" multiple class="form-control"><!-- RATING -->
-            <option value="null"> -- Make Selection --  </option>
-            <option value="1"> -- 1 Star --  </option>
-            <option value="2"> -- 2 Stars --  </option>
-            <option value="3"> -- 3 Stars --  </option>
-            <option value="4"> -- 4 Stars --  </option>
-            <option value="5"> -- 5 Stars --  </option>
-        </select>
-        <button type="submit" class="btn btn-default">Publish!</button>
       </form>
 
-      <!-- <div class="restaurant">
-        #if ($restaurants)
-          #foreach ($restaurant in $restaurants)
-            <h2>$restaurant.getName()</h2>
-              <li>$restaurant.getRating()</li>
-              <p>$restaurant.getReview()</p>
-          #end
-        #else
-          <p>
-          No new tests
-          </p>
-        #end
-      </div> -->
-
-
-    <button><a href="/review">See reviews</a></button>
+    <h2><a href="/review">See reviews</a></h2>
